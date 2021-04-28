@@ -26,11 +26,11 @@ function showNotes() {
     }
     let html = "";
     notesObj.forEach(function (element, index) {
-        let today= new Date();
+        let moment= new Date();
        
         html += `<div class="noteCard my-3 mx-3 card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Note ${index + 1}, ${today.getDate()}/${today.getMonth()}/${today.getFullYear()} </h5>
+          <h5 class="card-title">Note ${index + 1}, ${moment.getDate()}/${moment.getMonth()}/${moment.getFullYear()} </h5>
           <p></p>
           <p class="card-text">${element}</p>
           <button id="${index}" onclick="deleteNotes(this.id)" class="btn btn-primary">Remove Note</button>
