@@ -44,7 +44,7 @@ function showNotes() {
       </div>`;
     });
     let notesElm = document.getElementById('notes');
-    if (notesObj.length != 0) {
+    if (notesObj.length != 0) {a
         notesElm.innerHTML = html;
     }
     else {
