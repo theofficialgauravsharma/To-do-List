@@ -36,7 +36,7 @@ function showNotes() {
        
         html += `<div class="noteCard my-3 mx-3 card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Note ${element.title}, ${moment.getDate()}/${moment.getMonth()}/${moment.getFullYear()} </h5>
+          <h5 class="card-title"> ${element.title}    ${moment.getDate()}/${moment.getMonth()}/${moment.getFullYear()} </h5>
          
           <p class="card-text">${element.text}</p>
           <button id="${index}" onclick="deleteNotes(this.id)" class="btn btn-primary">Remove Note</button>
@@ -44,7 +44,7 @@ function showNotes() {
       </div>`;
     });
     let notesElm = document.getElementById('notes');
-    if (notesObj.length != 0) {a
+    if (notesObj.length != 0) {
         notesElm.innerHTML = html;
     }
     else {
